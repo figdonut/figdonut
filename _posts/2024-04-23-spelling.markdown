@@ -1,0 +1,8 @@
+---
+layout: post
+title:  "Spelling"
+date:   2024-04-23 00:00:00 -0400
+permalink: /2/
+categories: comic
+---
+![](/assets/Comic2.png)
