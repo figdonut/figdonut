@@ -4,5 +4,6 @@ title:  "Paranoia"
 date:   2024-04-22 00:00:00 -0400
 permalink: /1/
 categories: comic
+comments: true
 ---
 ![](/assets/Comic1.png)
