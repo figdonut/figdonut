@@ -1,35 +1,12 @@
 ---
 layout: default
 ---
-<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+<body>
+{%- assign latest_post = site.posts[0] -%}
+<p>Redirecting you to {{ latest_post.title }}</p>
 
-  <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">{{ site.posts.first.title | escape }}</h1>
-    <p class="post-meta">
-      <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        {{ site.posts.first.date | date: date_format }}
-      </time>
-      {%- if page.author -%}
-        • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ site.posts.first.author }}</span></span>
-      {%- endif -%}</p>
-  </header>
+<script>
+    window.location.href = "{{ latest_post.url }}";
+</script>
 
-  <div class="post-content e-content" itemprop="articleBody">
-    {{ site.posts.first.content }}
-  </div>
-  <div class="PageNavigation">
-    {% if site.posts.first.previous.url %}
-      <a class="prev" href="{{site.posts.first.previous.url}}">&laquo; {{site.posts.first.previous.title}}</a>
-    {% endif %}
-    {% if site.posts.first.next.url %}
-      <a class="next" href="{{site.posts.first.next.url}}">{{site.posts.first.next.title}} &raquo;</a>
-    {% endif %}
-  </div>
-
-  {%- if site.disqus.shortname -%}
-    {%- include disqus_comments.html -%}
-  {%- endif -%}
-
-  <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
-</article>
+</body>
