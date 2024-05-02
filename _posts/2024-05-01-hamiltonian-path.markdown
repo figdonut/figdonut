@@ -6,4 +6,4 @@ permalink: /3/
 categories: comic
 comments: true
 ---
-![](/assets/Comic3.png)
+![](/assets/comic3.png)
