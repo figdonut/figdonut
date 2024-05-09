@@ -4,4 +4,4 @@ title: About
 permalink: /about/
 ---
 
-I'm TJK and this is my comic blog.
+I'm TJK17 and this is my comic blog.
